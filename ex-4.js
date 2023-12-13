@@ -8,7 +8,8 @@ let studentProfile = {
 };
 
 let additionalHobbies = ["Painting", "Yoga"];
-
+//let a = stud
 // Start coding here
-
+//console.log(studentProfile.hobbies)
+let newStudentProfile = {...studentProfile,hobbies:[...additionalHobbies,...studentProfile.hobbies]}
 console.log(newStudentProfile);
