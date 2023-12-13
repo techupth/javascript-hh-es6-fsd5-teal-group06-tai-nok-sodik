@@ -13,5 +13,10 @@ let studentScores = {
 };
 
 // Start coding here
-
+const newStudentProfile = {...studentProfile, 
+  scores: {
+    thai: studentProfile.scores.thai,
+    ...studentScores
+  }
+};
 console.log(newStudentProfile);
